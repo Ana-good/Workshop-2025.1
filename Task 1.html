@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            flex: 1;
+            color: rgb(209, 203, 203);
+            font-family: fonte1;
+            font-size: 15px;
+        }
+        @font-face{
+            font-family: fonte1;
+            src: url(BitterPro-Light.ttf);
+        }
+        html{
+            height: 100%;
+
+        }
+        body{
+            min-height: 100%;
+            background-image: url(tecnologia\ fundo.png) ;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            
+        }
+        .blocoprincipal{
+            background-color: rgba(0, 0, 0, 0.76);
+            width: fit-content;
+            padding: 50px;
+            padding-bottom: 10px;
+            border-radius: 25px;
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        
+        }
+        .blocoprincipal img{
+            padding-bottom: 20px;
+            
+        }
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        .formulario label{
+            padding-right: 195px;
+            
+        }
+        .formulario input[type=email], input[type=password]{
+            border-radius: 13px;
+            border-width: 1px;
+            width: 250px;
+            padding: 6px;
+            background-color: rgb(127, 153, 153);
+            outline: unset;
+            border-color: rgb(103, 131, 121);
+            
+        }
+        .formulario input[type=submit]{
+            margin-top: 10px;
+            border-radius: 13px;
+            border-width: 1px;
+            padding: 10px;
+            width: 100px;
+            cursor: pointer;
+            font-size: 15.5px;
+            background-color: rgb(33, 139, 33);
+            text-shadow: none;
+            border-color: rgb(71, 150, 71);
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="blocoprincipal">
+        <img src="imagem computador.png" alt="computador" width="250px"></img> 
+
+        <form class="formulario">
+
+            <label> Email </label>
+            <input type="email" id="email" name="email" required> <br/>
+
+            <label> Senha </label>
+            <input type="password" id="senha" name="senha" required> <br/> 
+
+            <input type="submit" value="Enviar"> <br/> 
+            
+        </form>
+    </section>
+</body>
+</html>
